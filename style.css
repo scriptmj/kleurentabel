@@ -1,5 +1,12 @@
-.kleurentabel {
+/* .kleurentabel {
     color:white;
+} */
+
+.grid {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    color: white;
+    width: 200px;
 }
 
 .groen {
@@ -12,4 +19,35 @@
 
 .blauw {
     background-color: blue;
+}
+
+.grid2 {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 5px;
+    width: 200px;
+    height: 100px;
+}
+
+.section {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rood2 {
+    grid-row: 1 / span 2;
+    background-color: red;
+    justify-items: center;
+}
+
+.blauw2 {
+    grid-row: 1 / span 1;
+    background-color: blue;
+}
+
+.groen2 {
+    grid-row: 2 / span 1;
+    background-color: green;
 }
